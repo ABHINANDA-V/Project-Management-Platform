@@ -73,9 +73,7 @@ class TaskSerializer(serializers.ModelSerializer):
         model = Task
         fields = '__all__'    
 
-     
-
-
+    
 class UserSerializer(serializers.ModelSerializer):
     password = serializers.CharField(write_only=True, required=False)
     

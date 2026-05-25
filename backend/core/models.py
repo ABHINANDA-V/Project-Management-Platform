@@ -25,7 +25,6 @@ class Tag(models.Model):
     def __str__(self):
         return self.name
 
-
 class Flag(models.Model):
     name = models.CharField(max_length=50)
 
@@ -96,8 +95,6 @@ class Comment(models.Model):
 
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-
-
 
 
 class ActivityLog(models.Model):
